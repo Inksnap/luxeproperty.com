@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Properties</h1>
+                <p>Manage your property listings</p>
+            </div>
+            <div class="admin-header-right">
+                <button class="btn btn-outline">Export</button>
+                <a href="properties.html?action=add" class="btn btn-primary">+ Add New Property</a>
+            </div>
+        </header>
+
+        <!-- Properties Content -->
+        <div class="admin-content">
+            <!-- Filters -->
+            <div class="admin-card">
+                <div class="admin-filters">
+                    <input type="text" placeholder="Search properties..." class="admin-search-input">
+                    <select class="admin-filter-select">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Pending</option>
+                        <option>Sold</option>
+                    </select>
+                    <select class="admin-filter-select">
+                        <option>All Types</option>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                        <option>Luxury</option>
+                    </select>
+                    <button class="btn btn-primary">Filter</button>
+                </div>
+            </div>
+
+            <!-- Properties Table -->
+            <div class="admin-card">
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="selectAll">
+                                </th>
+                                <th>Property</th>
+                                <th>Location</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Date Added</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                        <div>
+                                            <strong>Modern Downtown Loft</strong>
+                                            <span>4 Beds, 3 Baths, 2,500 sqft</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Manhattan, NY</td>
+                                <td>Residential</td>
+                                <td>$2,500,000</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Jan 15, 2025</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="View">👁️</button>
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                        <div>
+                                            <strong>Beachfront Villa</strong>
+                                            <span>5 Beds, 4 Baths, 3,800 sqft</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Malibu, CA</td>
+                                <td>Luxury</td>
+                                <td>$4,800,000</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Jan 12, 2025</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="View">👁️</button>
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                        <div>
+                                            <strong>Downtown Penthouse</strong>
+                                            <span>3 Beds, 3 Baths, 2,200 sqft</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>San Francisco, CA</td>
+                                <td>Residential</td>
+                                <td>$3,200,000</td>
+                                <td><span class="badge badge-warning">Pending</span></td>
+                                <td>Jan 10, 2025</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="View">👁️</button>
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                        <div>
+                                            <strong>Gated Estate</strong>
+                                            <span>6 Beds, 5 Baths, 4,500 sqft</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Beverly Hills, CA</td>
+                                <td>Luxury</td>
+                                <td>$5,100,000</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Jan 8, 2025</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="View">👁️</button>
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                        <div>
+                                            <strong>Contemporary Family Home</strong>
+                                            <span>4 Beds, 3 Baths, 3,200 sqft</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Seattle, WA</td>
+                                <td>Residential</td>
+                                <td>$1,800,000</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Jan 5, 2025</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="View">👁️</button>
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="admin-pagination">
+                    <button class="btn btn-outline">Previous</button>
+                    <div class="pagination-numbers">
+                        <button class="btn btn-primary">1</button>
+                        <button class="btn btn-outline">2</button>
+                        <button class="btn btn-outline">3</button>
+                    </div>
+                    <button class="btn btn-outline">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+

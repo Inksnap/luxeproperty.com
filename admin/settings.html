@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item active">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Settings</h1>
+                <p>Manage your website settings</p>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- General Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h2>General Settings</h2>
+                </div>
+                <form class="admin-form">
+                    <div class="form-group">
+                        <label>Site Name</label>
+                        <input type="text" value="LuxeProperties" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Site Tagline</label>
+                        <input type="text" value="Premium Real Estate Solutions" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Email</label>
+                        <input type="email" value="info@luxeproperties.com" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Phone</label>
+                        <input type="tel" value="(555) 123-4567" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <textarea class="form-control" rows="3">123 Real Estate Avenue, New York, NY 10001</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+
+            <!-- Social Media -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h2>Social Media Links</h2>
+                </div>
+                <form class="admin-form">
+                    <div class="form-group">
+                        <label>Facebook URL</label>
+                        <input type="url" value="https://facebook.com/luxeproperties" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Twitter URL</label>
+                        <input type="url" value="https://twitter.com/luxeproperties" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Instagram URL</label>
+                        <input type="url" value="https://instagram.com/luxeproperties" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn URL</label>
+                        <input type="url" value="https://linkedin.com/company/luxeproperties" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+
+            <!-- SEO Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h2>SEO Settings</h2>
+                </div>
+                <form class="admin-form">
+                    <div class="form-group">
+                        <label>Meta Description</label>
+                        <textarea class="form-control" rows="3">Premium real estate properties and luxury homes. Find your dream property with LuxeProperties.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Keywords</label>
+                        <input type="text" value="real estate, luxury homes, properties, real estate agency" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+

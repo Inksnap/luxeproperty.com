@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item active">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Agents</h1>
+                <p>Manage your real estate agents</p>
+            </div>
+            <div class="admin-header-right">
+                <a href="agents.html?action=add" class="btn btn-primary">+ Add New Agent</a>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <div class="admin-card">
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Agent</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Properties</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Agent" width="60" height="60" style="border-radius: 50%;">
+                                        <div>
+                                            <strong>Alexandra Mitchell</strong>
+                                            <span>Senior Luxury Agent</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>alexandra@luxeproperties.com</td>
+                                <td>(555) 123-4567</td>
+                                <td>8</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="Agent" width="60" height="60" style="border-radius: 50%;">
+                                        <div>
+                                            <strong>James Richardson</strong>
+                                            <span>Commercial Specialist</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>james@luxeproperties.com</td>
+                                <td>(555) 234-5678</td>
+                                <td>6</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Agent" width="60" height="60" style="border-radius: 50%;">
+                                        <div>
+                                            <strong>Victoria Chen</strong>
+                                            <span>International Properties</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>victoria@luxeproperties.com</td>
+                                <td>(555) 345-6789</td>
+                                <td>5</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+

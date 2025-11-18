@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item active">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Blog Posts</h1>
+                <p>Manage your blog content</p>
+            </div>
+            <div class="admin-header-right">
+                <a href="blog.html?action=add" class="btn btn-primary">+ Create New Post</a>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <div class="admin-card">
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Post</th>
+                                <th>Author</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=60&h=60&fit=crop" alt="Blog" width="60" height="60">
+                                        <div>
+                                            <strong>10 Tips for First-Time Home Buyers</strong>
+                                            <span>Real estate buying guide</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>Buying Guide</td>
+                                <td>Jan 20, 2025</td>
+                                <td><span class="badge badge-success">Published</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=60&h=60&fit=crop" alt="Blog" width="60" height="60">
+                                        <div>
+                                            <strong>Market Trends 2025</strong>
+                                            <span>Real estate market analysis</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>Market News</td>
+                                <td>Jan 18, 2025</td>
+                                <td><span class="badge badge-success">Published</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-property">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=60&h=60&fit=crop" alt="Blog" width="60" height="60">
+                                        <div>
+                                            <strong>Luxury Home Staging Ideas</strong>
+                                            <span>Home improvement tips</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>Home Tips</td>
+                                <td>Jan 15, 2025</td>
+                                <td><span class="badge badge-warning">Draft</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn-icon" title="Edit">✏️</button>
+                                        <button class="btn-icon" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+

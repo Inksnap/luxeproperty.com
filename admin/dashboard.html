@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item active">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Dashboard</h1>
+                <p>Welcome back, Admin</p>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="admin-user-menu">
+                    <div class="admin-avatar">A</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="admin-content">
+            <!-- Stats Cards -->
+            <div class="admin-stats-grid">
+                <div class="admin-stat-card">
+                    <div class="stat-icon" style="background: #E8F5E9;">🏠</div>
+                    <div class="stat-content">
+                        <h3>Total Properties</h3>
+                        <p class="stat-number">24</p>
+                        <span class="stat-change positive">+12% from last month</span>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon" style="background: #E3F2FD;">👥</div>
+                    <div class="stat-content">
+                        <h3>Active Agents</h3>
+                        <p class="stat-number">8</p>
+                        <span class="stat-change positive">+2 new agents</span>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon" style="background: #FFF3E0;">📧</div>
+                    <div class="stat-content">
+                        <h3>New Inquiries</h3>
+                        <p class="stat-number">15</p>
+                        <span class="stat-change">5 unread</span>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon" style="background: #F3E5F5;">📝</div>
+                    <div class="stat-content">
+                        <h3>Blog Posts</h3>
+                        <p class="stat-number">12</p>
+                        <span class="stat-change positive">3 published this week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="admin-grid-2">
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h2>Recent Properties</h2>
+                        <a href="properties.html" class="btn-link">View All</a>
+                    </div>
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Location</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-property">
+                                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                            <div>
+                                                <strong>Modern Downtown Loft</strong>
+                                                <span>4 Beds, 3 Baths</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Manhattan, NY</td>
+                                    <td>$2.5M</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="btn-icon" title="Edit">✏️</button>
+                                            <button class="btn-icon" title="Delete">🗑️</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-property">
+                                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                            <div>
+                                                <strong>Beachfront Villa</strong>
+                                                <span>5 Beds, 4 Baths</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Malibu, CA</td>
+                                    <td>$4.8M</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="btn-icon" title="Edit">✏️</button>
+                                            <button class="btn-icon" title="Delete">🗑️</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-property">
+                                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=60&h=60&fit=crop" alt="Property" width="60" height="60">
+                                            <div>
+                                                <strong>Downtown Penthouse</strong>
+                                                <span>3 Beds, 3 Baths</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>San Francisco, CA</td>
+                                    <td>$3.2M</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="btn-icon" title="Edit">✏️</button>
+                                            <button class="btn-icon" title="Delete">🗑️</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h2>Recent Inquiries</h2>
+                        <a href="inquiries.html" class="btn-link">View All</a>
+                    </div>
+                    <div class="admin-inquiries-list">
+                        <div class="inquiry-item">
+                            <div class="inquiry-header">
+                                <strong>John Smith</strong>
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <p>Interested in Modern Downtown Loft</p>
+                            <span class="inquiry-time">2 hours ago</span>
+                        </div>
+                        <div class="inquiry-item">
+                            <div class="inquiry-header">
+                                <strong>Sarah Johnson</strong>
+                            </div>
+                            <p>Requesting information about Beachfront Villa</p>
+                            <span class="inquiry-time">5 hours ago</span>
+                        </div>
+                        <div class="inquiry-item">
+                            <div class="inquiry-header">
+                                <strong>Michael Brown</strong>
+                            </div>
+                            <p>Schedule a tour for Downtown Penthouse</p>
+                            <span class="inquiry-time">1 day ago</span>
+                        </div>
+                        <div class="inquiry-item">
+                            <div class="inquiry-header">
+                                <strong>Emily Davis</strong>
+                            </div>
+                            <p>Mortgage calculator inquiry</p>
+                            <span class="inquiry-time">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h2>Quick Actions</h2>
+                </div>
+                <div class="admin-quick-actions">
+                    <a href="properties.html?action=add" class="quick-action-btn">
+                        <span class="action-icon">➕</span>
+                        <span>Add New Property</span>
+                    </a>
+                    <a href="agents.html?action=add" class="quick-action-btn">
+                        <span class="action-icon">👤</span>
+                        <span>Add New Agent</span>
+                    </a>
+                    <a href="blog.html?action=add" class="quick-action-btn">
+                        <span class="action-icon">📄</span>
+                        <span>Create Blog Post</span>
+                    </a>
+                    <a href="settings.html" class="quick-action-btn">
+                        <span class="action-icon">⚙️</span>
+                        <span>Site Settings</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+

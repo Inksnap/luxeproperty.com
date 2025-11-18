@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LuxeProperties - Premium Real Estate Marketplace. Find your dream property with our curated listings and expert agents.">
+    <title>LuxeProperties - Premium Real Estate Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="index.html">LuxeProperties</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-outline">Sign In</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Find Your Dream Property</h1>
+            <p class="hero-subtitle">Discover premium real estate listings curated for discerning buyers</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-group">
+                    <label>Location</label>
+                    <input type="text" placeholder="Enter city or address">
+                </div>
+                <div class="search-group">
+                    <label>Property Type</label>
+                    <select>
+                        <option>All Types</option>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                        <option>Luxury</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <label>Price Range</label>
+                    <input type="text" placeholder="$0 - $10M+">
+                </div>
+                        <a href="properties.html" class="btn btn-primary">Search Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Listings</h2>
+                <p>Handpicked premium properties from our exclusive collection</p>
+            </div>
+
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop" alt="Modern luxury apartment" width="400" height="300" loading="lazy">
+                        <div class="price-badge">$2.5M</div>
+                        <button class="favorite-btn">♡</button>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Downtown Loft</h3>
+                        <p class="location">Manhattan, New York</p>
+                        <div class="property-specs">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,500 sqft</span>
+                        </div>
+                        <p class="description">Stunning penthouse with panoramic city views and premium finishes.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" alt="Luxury beach house" width="400" height="300" loading="lazy">
+                        <div class="price-badge">$4.8M</div>
+                        <button class="favorite-btn">♡</button>
+                    </div>
+                    <div class="property-details">
+                        <h3>Beachfront Villa</h3>
+                        <p class="location">Malibu, California</p>
+                        <div class="property-specs">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>3,800 sqft</span>
+                        </div>
+                        <p class="description">Exclusive oceanfront estate with private beach access and resort amenities.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop" alt="Downtown penthouse" width="400" height="300" loading="lazy">
+                        <div class="price-badge">$3.2M</div>
+                        <button class="favorite-btn">♡</button>
+                    </div>
+                    <div class="property-details">
+                        <h3>Downtown Penthouse</h3>
+                        <p class="location">San Francisco, California</p>
+                        <div class="property-specs">
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,200 sqft</span>
+                        </div>
+                        <p class="description">Award-winning architecture with smart home technology and concierge service.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop" alt="Luxury mansion" width="400" height="300" loading="lazy">
+                        <div class="price-badge">$5.1M</div>
+                        <button class="favorite-btn">♡</button>
+                    </div>
+                    <div class="property-details">
+                        <h3>Gated Estate</h3>
+                        <p class="location">Beverly Hills, California</p>
+                        <div class="property-specs">
+                            <span>6 Beds</span>
+                            <span>5 Baths</span>
+                            <span>4,500 sqft</span>
+                        </div>
+                        <p class="description">Private gated estate with guest house, infinity pool, and wine cellar.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="properties.html" class="btn btn-primary btn-lg">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose LuxeProperties</h2>
+                <p>Excellence in every transaction</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Premium Selection</h3>
+                    <p>Curated listings from top markets worldwide</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Expert Agents</h3>
+                    <p>Certified professionals with decades of experience</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Secure Transactions</h3>
+                    <p>Transparent process with full legal protection</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer service and assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Profiles -->
+    <section id="agents" class="agents">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Top Agents</h2>
+                <p>Experienced professionals ready to help you</p>
+            </div>
+
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Alexandra Mitchell" width="300" height="300" loading="lazy">
+                    <h3>Alexandra Mitchell</h3>
+                    <p class="agent-title">Senior Luxury Agent</p>
+                    <p class="agent-bio">Specializing in high-end residential properties with 12+ years of experience.</p>
+                    <div class="agent-stats">
+                        <div class="stat">
+                            <span class="stat-number">480+</span>
+                            <span class="stat-label">Properties Sold</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.1B</span>
+                            <span class="stat-label">Total Volume</span>
+                        </div>
+                    </div>
+                    <a href="agent-detail.html" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <div class="agent-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="James Richardson" width="300" height="300" loading="lazy">
+                    <h3>James Richardson</h3>
+                    <p class="agent-title">Commercial Specialist</p>
+                    <p class="agent-bio">Expert in commercial real estate and investment properties.</p>
+                    <div class="agent-stats">
+                        <div class="stat">
+                            <span class="stat-number">320+</span>
+                            <span class="stat-label">Properties Sold</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$1.8B</span>
+                            <span class="stat-label">Total Volume</span>
+                        </div>
+                    </div>
+                    <a href="agent-detail.html" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <div class="agent-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Victoria Chen" width="300" height="300" loading="lazy">
+                    <h3>Victoria Chen</h3>
+                    <p class="agent-title">International Properties</p>
+                    <p class="agent-bio">Handles international acquisitions and luxury portfolios.</p>
+                    <div class="agent-stats">
+                        <div class="stat">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Properties Sold</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$3.2B</span>
+                            <span class="stat-label">Total Volume</span>
+                        </div>
+                    </div>
+                    <a href="agent-detail.html" class="btn btn-outline">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>Success stories from our satisfied clients</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"LuxeProperties made our dream come true. The team's professionalism and dedication were exceptional."</p>
+                    <p class="testimonial-author">— Margaret & David Thompson</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best real estate experience we've had. Their market knowledge is unparalleled and the results speak for themselves."</p>
+                    <p class="testimonial-author">— Robert Chen, CEO</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"From first consultation to closing, everything was seamless. They truly understand luxury properties."</p>
+                    <p class="testimonial-author">— Jennifer Sullivan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Properties Listed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Expert Agents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to find your perfect property? Contact us today.</p>
+                    
+                    <div class="info-item">
+                        <span class="label">Phone</span>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="label">Email</span>
+                        <p>hello@luxeproperties.com</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="label">Office</span>
+                        <p>123 Park Avenue<br>New York, NY 10022</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest property listings and real estate insights</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>LuxeProperties</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="properties.html">All Properties</a></li>
+                        <li><a href="properties.html?type=residential">Residential</a></li>
+                        <li><a href="properties.html?type=commercial">Commercial</a></li>
+                        <li><a href="properties.html?type=luxury">Luxury</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="agents.html">Our Agents</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-md);">
+                <p>&copy; 2025 LuxeProperties. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

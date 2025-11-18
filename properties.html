@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our extensive collection of premium real estate properties. Find your dream home today.">
+    <title>Properties - LuxeProperties</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="index.html">LuxeProperties</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html" class="active">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-outline">Sign In</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>All Properties</h1>
+            <p>Discover your perfect property from our curated collection</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Properties</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Location</label>
+                    <input type="text" placeholder="City or Address">
+                </div>
+                <div class="filter-group">
+                    <label>Property Type</label>
+                    <select>
+                        <option>All Types</option>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                        <option>Luxury</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select>
+                        <option>Any Price</option>
+                        <option>Under $500K</option>
+                        <option>$500K - $1M</option>
+                        <option>$1M - $2M</option>
+                        <option>$2M - $5M</option>
+                        <option>Over $5M</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Bedrooms</label>
+                    <select>
+                        <option>Any</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+                <div class="filter-actions">
+                    <button class="btn btn-primary">Search</button>
+                    <button class="btn btn-outline">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="featured-properties">
+        <div class="container">
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" data-property-id="1">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop" alt="Modern luxury apartment" loading="lazy">
+                        <div class="price-badge">$2.5M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="1">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Downtown Loft</h3>
+                        <p class="location">Manhattan, New York</p>
+                        <div class="property-specs">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,500 sqft</span>
+                        </div>
+                        <p class="description">Stunning penthouse with panoramic city views and premium finishes.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" data-property-id="2">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" alt="Luxury beach house" loading="lazy">
+                        <div class="price-badge">$4.8M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="2">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Beachfront Villa</h3>
+                        <p class="location">Malibu, California</p>
+                        <div class="property-specs">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>3,800 sqft</span>
+                        </div>
+                        <p class="description">Exclusive oceanfront estate with private beach access and resort amenities.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" data-property-id="3">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop" alt="Downtown penthouse" loading="lazy">
+                        <div class="price-badge">$3.2M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="3">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Downtown Penthouse</h3>
+                        <p class="location">San Francisco, California</p>
+                        <div class="property-specs">
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,200 sqft</span>
+                        </div>
+                        <p class="description">Award-winning architecture with smart home technology and concierge service.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card" data-property-id="4">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop" alt="Luxury mansion" loading="lazy">
+                        <div class="price-badge">$5.1M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="4">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Gated Estate</h3>
+                        <p class="location">Beverly Hills, California</p>
+                        <div class="property-specs">
+                            <span>6 Beds</span>
+                            <span>5 Baths</span>
+                            <span>4,500 sqft</span>
+                        </div>
+                        <p class="description">Private gated estate with guest house, infinity pool, and wine cellar.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card" data-property-id="5">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=400&h=300&fit=crop" alt="Modern home" loading="lazy">
+                        <div class="price-badge">$1.8M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="5">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Contemporary Family Home</h3>
+                        <p class="location">Seattle, Washington</p>
+                        <div class="property-specs">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>3,200 sqft</span>
+                        </div>
+                        <p class="description">Spacious modern home with open floor plan and beautiful landscaping.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="property-card" data-property-id="6">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=400&h=300&fit=crop" alt="Luxury condo" loading="lazy">
+                        <div class="price-badge">$1.2M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="6">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Waterfront Condo</h3>
+                        <p class="location">Miami, Florida</p>
+                        <div class="property-specs">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,800 sqft</span>
+                        </div>
+                        <p class="description">Elegant waterfront condo with stunning ocean views and resort amenities.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 7 -->
+                <div class="property-card" data-property-id="7">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop" alt="Country estate" loading="lazy">
+                        <div class="price-badge">$3.5M</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="7">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Country Estate</h3>
+                        <p class="location">Napa Valley, California</p>
+                        <div class="property-specs">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>4,200 sqft</span>
+                        </div>
+                        <p class="description">Beautiful country estate with vineyard views and extensive grounds.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 8 -->
+                <div class="property-card" data-property-id="8">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=300&fit=crop" alt="Urban loft" loading="lazy">
+                        <div class="price-badge">$950K</div>
+                        <button class="favorite-btn">♡</button>
+                        <label class="compare-checkbox">
+                            <input type="checkbox" class="compare-property" data-id="8">
+                            <span>Compare</span>
+                        </label>
+                    </div>
+                    <div class="property-details">
+                        <h3>Urban Loft</h3>
+                        <p class="location">Brooklyn, New York</p>
+                        <div class="property-specs">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,500 sqft</span>
+                        </div>
+                        <p class="description">Stylish converted loft with high ceilings and industrial design elements.</p>
+                        <a href="property-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compare Bar -->
+            <div id="compareBar" class="compare-bar" style="display: none;">
+                <div class="container">
+                    <div>
+                        <div>
+                            <strong id="compareCount">0</strong> properties selected for comparison
+                        </div>
+                        <div>
+                            <button class="btn btn-outline" id="clearCompare">Clear</button>
+                            <button class="btn btn-primary" id="compareNow">Compare Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="view-all" style="margin-top: var(--spacing-xl);">
+                <div style="display: flex; gap: var(--spacing-sm); justify-content: center; align-items: center;">
+                    <button class="btn btn-outline">Previous</button>
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-outline">2</button>
+                    <button class="btn btn-outline">3</button>
+                    <button class="btn btn-outline">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>LuxeProperties</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="properties.html">All Properties</a></li>
+                        <li><a href="properties.html?type=residential">Residential</a></li>
+                        <li><a href="properties.html?type=commercial">Commercial</a></li>
+                        <li><a href="properties.html?type=luxury">Luxury</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="agents.html">Our Agents</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-md);">
+                    <p>&copy; 2025 LuxeProperties. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries - Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>LuxeProperties</h2>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="properties.html" class="admin-nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Properties</span>
+            </a>
+            <a href="agents.html" class="admin-nav-item">
+                <span class="nav-icon">👥</span>
+                <span>Agents</span>
+            </a>
+            <a href="blog.html" class="admin-nav-item">
+                <span class="nav-icon">📝</span>
+                <span>Blog Posts</span>
+            </a>
+            <a href="inquiries.html" class="admin-nav-item active">
+                <span class="nav-icon">📧</span>
+                <span>Inquiries</span>
+            </a>
+            <a href="settings.html" class="admin-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+            <a href="../index.html" class="admin-nav-item" target="_blank">
+                <span class="nav-icon">🌐</span>
+                <span>View Website</span>
+            </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+            <a href="login.html" class="admin-logout">Logout</a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <h1>Inquiries</h1>
+                <p>Manage customer inquiries and messages</p>
+            </div>
+            <div class="admin-header-right">
+                <select class="admin-filter-select">
+                    <option>All Inquiries</option>
+                    <option>New</option>
+                    <option>Read</option>
+                    <option>Replied</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <div class="admin-card">
+                <div class="admin-inquiries-list">
+                    <div class="inquiry-item">
+                        <div class="inquiry-header">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span style="display: block; font-size: 0.85rem; color: var(--color-gray-600);">john.smith@email.com | (555) 123-4567</span>
+                            </div>
+                            <span class="badge badge-new">New</span>
+                        </div>
+                        <p><strong>Subject:</strong> Interested in Modern Downtown Loft</p>
+                        <p>I'm interested in scheduling a viewing for the Modern Downtown Loft property. Please let me know your availability.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--spacing-sm);">
+                            <span class="inquiry-time">2 hours ago</span>
+                            <div class="table-actions">
+                                <button class="btn btn-outline btn-sm">Mark as Read</button>
+                                <button class="btn btn-primary btn-sm">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inquiry-item">
+                        <div class="inquiry-header">
+                            <div>
+                                <strong>Sarah Johnson</strong>
+                                <span style="display: block; font-size: 0.85rem; color: var(--color-gray-600);">sarah.j@email.com | (555) 234-5678</span>
+                            </div>
+                        </div>
+                        <p><strong>Subject:</strong> Requesting information about Beachfront Villa</p>
+                        <p>Could you please send me more details about the Beachfront Villa? I'm particularly interested in the amenities and neighborhood information.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--spacing-sm);">
+                            <span class="inquiry-time">5 hours ago</span>
+                            <div class="table-actions">
+                                <button class="btn btn-outline btn-sm">Mark as Read</button>
+                                <button class="btn btn-primary btn-sm">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inquiry-item">
+                        <div class="inquiry-header">
+                            <div>
+                                <strong>Michael Brown</strong>
+                                <span style="display: block; font-size: 0.85rem; color: var(--color-gray-600);">m.brown@email.com | (555) 345-6789</span>
+                            </div>
+                        </div>
+                        <p><strong>Subject:</strong> Schedule a tour for Downtown Penthouse</p>
+                        <p>I'd like to schedule a property tour for the Downtown Penthouse. Are you available this weekend?</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--spacing-sm);">
+                            <span class="inquiry-time">1 day ago</span>
+                            <div class="table-actions">
+                                <button class="btn btn-outline btn-sm">Mark as Read</button>
+                                <button class="btn btn-primary btn-sm">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
+
